@@ -13,7 +13,7 @@ class MNISTDataset(Dataset):
     def __getitem__(self, index):
         return self.data[index], self.label[index]
 
-def get_loaders(train_fraction, batch_size, seed):
+def get_loaders(train_fraction, batch_size, seed, full_data_return = False):
     np.random.seed(seed)
 
     train_data1 = np.load('./data/data0.npy')
@@ -30,6 +30,12 @@ def get_loaders(train_fraction, batch_size, seed):
 
     full_data = full_data[len_arr]
     full_label = full_label[len_arr]
+
+    if full_data_return:
+        full_dataset = MNISTDataset(full_data, full_label)
+        full_loader = DataLoader(full_dataset, batch_size=batch_size)
+        return full_loader
+    
     train_len = int(len(full_label)*train_fraction)
 
     train_data = full_data[:train_len]
