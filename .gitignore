@@ -1,0 +1,5 @@
+__pycache__
+.vscode
+trained_models/
+data/
+Report.md
