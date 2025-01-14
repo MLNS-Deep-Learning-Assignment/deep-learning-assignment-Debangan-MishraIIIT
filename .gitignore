@@ -1,5 +1,11 @@
 Part_1/__pycache__
 Part_1/data
 Part_1/trained_models
+
+Part_2/__pycache__
+Part_2/data
+Part_2/synthetic_data
+Part_2/trained_models
+
 __pycache__
 Report.md
