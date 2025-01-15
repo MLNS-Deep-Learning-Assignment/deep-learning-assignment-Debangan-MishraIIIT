@@ -1,0 +1,16 @@
+path: C:/Users/deban/Desktop/sem 6/MLNS/deep-learning-assignment-Debangan-MishraIIIT/Part_2/
+train: ./synthetic_data2/images/
+val: ./synthetic_data2/images/
+
+nc: 10
+names:
+  0: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  5: 5
+  6: 6
+  7: 7
+  8: 8
+  9: 9
