@@ -7,5 +7,9 @@ Part_2/data
 Part_2/synthetic_data
 Part_2/trained_models
 
+Part_2/runs
+Part_2/custom_results
+Part_2/synthetic_data2
+
 __pycache__
 Report.md
